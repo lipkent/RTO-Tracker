@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.datadog.rto-tracker-healthcheck</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>-c</string>
+        <string>exec "/Users/lip-kent.ng/Documents/Datadog Projects/RTO-Tracker/.venv/bin/python3" "/Users/lip-kent.ng/Documents/Datadog Projects/RTO-Tracker/venv_health_check.py"</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>21600</integer>
+    <key>StandardOutPath</key>
+    <string>/Users/lip-kent.ng/.rto_tracker/healthcheck_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/lip-kent.ng/.rto_tracker/healthcheck_stderr.log</string>
+    <key>WorkingDirectory</key>
+    <string>/Users/lip-kent.ng/Documents/Datadog Projects/RTO-Tracker</string>
+</dict>
+</plist>
